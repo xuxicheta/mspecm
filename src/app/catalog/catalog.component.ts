@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DoorsService } from '../doors.service';
+import { CatalogService } from './catalog.service';
 
 @Component({
   selector: 'app-catalog',
@@ -7,11 +7,12 @@ import { DoorsService } from '../doors.service';
   styleUrls: ['./catalog.component.css']
 })
 export class CatalogComponent implements OnInit {
-  min = this.doorsService.getMinimums();
+
 
   constructor(
-    private doorsService: DoorsService,
-  ) { }
+    public catalogService: CatalogService,
+  ) {
+  }
 
   ngOnInit(): void {
   }

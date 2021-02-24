@@ -1,9 +1,15 @@
-<h1>Каталог нашей продукции</h1>
+<h1 class="font-bold text-center mb-2">Каталог нашей продукции</h1>
 
-<section class="grid grid-rows-2">
+<section class="flex space-x-8">
   <app-catalog-unit
     imgSrc="assets/ekonom-s.jpg"
     name="Эконом-класс"
-    [price]="min.ekonom"
+    [price]="catalogService.minEkonom"
+  ></app-catalog-unit>
+
+  <app-catalog-unit
+    imgSrc="assets/laminat-s.jpg"
+    name="Ламинат"
+    [price]="catalogService.minLaminat"
   ></app-catalog-unit>
 </section>

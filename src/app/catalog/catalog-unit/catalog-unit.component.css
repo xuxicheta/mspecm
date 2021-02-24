@@ -1,3 +1,3 @@
 :host {
-  @apply flex flex-col
+  @apply flex flex-col cursor-pointer hover:shadow-md p-4 transition-all
 }

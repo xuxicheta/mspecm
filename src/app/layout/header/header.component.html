@@ -1,0 +1,49 @@
+<section class="flex justify-between container mx-auto mt-5 pt-0.5">
+  <section class="flex">
+    <div>
+      <img
+        src="./assets/logo-small.png"
+        alt="logo"
+        class="border border-black"
+      >
+    </div>
+    <div class="ml-3 transform -translate-y-1.5">
+      <div class="txt-sm">Производственное объединение</div>
+      <h1 class="text-4xl italic bold">МОССПЕЦМОНТАЖ</h1>
+      <h3 class="text-lg">Стальные двери</h3>
+    </div>
+  </section>
+
+  <section class="mr-2 transform -translate-y-1.5">
+    <div>
+      <a
+        href="tel:+74957924222"
+        class="font-bold"
+      >
+        <small>8 (495)</small>
+        <span class="pl-1.5 text-2xl">792-42-22</span>
+      </a>
+    </div>
+    <div class="header-phone">
+      <h5 class="transform translate-y-1">Подольск:</h5>
+      <a
+        href="tel:+74967607874"
+        class="font-bold"
+      >
+        <small>8 (4967)</small>
+        <span class="pl-1.5 text-2xl">60-78-74</span>
+      </a>
+
+    </div>
+  </section>
+</section>
+
+<section class="flex container mx-auto mt-2">
+  <button class="button" [routerLink]="">Главная</button>
+  <button class="button" [routerLink]="['/', 'catalog']">Каталог</button>
+  <button class="button" [routerLink]="">Услуги</button>
+  <button class="button" [routerLink]="">Наши работы</button>
+  <button class="button" [routerLink]="['/', 'contacts']">Контакты</button>
+</section>
+
+

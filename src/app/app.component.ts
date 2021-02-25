@@ -4,7 +4,7 @@ import { fadeAnimation } from './layout/animations/fade.animation';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  host: { class: 'block ' },
   animations: [
     fadeAnimation,
   ]
